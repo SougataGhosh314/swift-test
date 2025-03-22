@@ -1,0 +1,28 @@
+{
+  "name": "feature1",
+  "tags": ["f1", "f2"],
+  "scenarios": [
+    {
+      "name": "scenario1",
+      "tags": ["s1", "s2"],
+      "steps": [
+        {
+          "name": "noArgMethod",
+          "params": []
+        },
+        {
+          "name": "oneArgMethod",
+          "params": ["Hello World"]
+        },
+        {
+          "name": "twoArgMethod",
+          "params": ["Number", 42]
+        },
+        {
+          "name": "threeArgMethod",
+          "params": ["Number", 42, true]
+        }
+      ]
+    }
+  ]
+}

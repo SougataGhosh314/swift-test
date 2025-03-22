@@ -1,0 +1,46 @@
+{
+  "name": "Calculator",
+  "tags": ["f3", "f4"],
+  "scenarios": [
+    {
+      "name": "Handling addition",
+      "tags": ["s3", "s4"],
+      "steps": [
+        {
+          "name": "I have two numbers",
+          "params": [3, 4]
+        },
+        {
+          "name": "I add them",
+          "params": []
+        },
+        {
+          "name": "The result should be",
+          "params": [7]
+        }
+      ]
+    },
+    {
+      "name": "Handling multiplication",
+      "tags": ["s3", "s4"],
+      "exampled": true,
+      "steps": [
+        {
+          "name": "I have two numbers"
+        },
+        {
+          "name": "I multiply them"
+        },
+        {
+          "name": "The result should be"
+        }
+      ],
+      "examples" : [
+        { "params": [[3, 4], [], [12]] },
+        { "params": [[5, 6], [], [30]] },
+        { "params": [[23, 54], [], [1242]] },
+        { "params": [[999, 27], [], [26973]] }
+      ]
+    }
+  ]
+}
