@@ -1,6 +1,5 @@
 {
   "name": "feature1",
-  "tags": ["f1", "f2"],
   "scenarios": [
     {
       "name": "scenario1",

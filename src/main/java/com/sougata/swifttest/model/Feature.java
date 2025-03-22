@@ -1,11 +1,12 @@
 package com.sougata.swifttest.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Feature {
     private String name;
-    private List<String> tags;
-    private List<Scenario> scenarios;
+    private List<String> tags = new ArrayList<>();
+    private List<Scenario> scenarios = new ArrayList<>();
 
     public Feature() {
     }

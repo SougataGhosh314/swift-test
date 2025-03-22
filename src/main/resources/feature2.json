@@ -4,15 +4,13 @@
   "scenarios": [
     {
       "name": "Handling addition",
-      "tags": ["s3", "s4"],
       "steps": [
         {
           "name": "I have two numbers",
           "params": [3, 4]
         },
         {
-          "name": "I add them",
-          "params": []
+          "name": "I add them"
         },
         {
           "name": "The result should be",

@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class Scenario {
     private String name;
-    private List<String> tags;
+    private List<String> tags = new ArrayList<>();
     private boolean exampled;
     private List<Step> steps;
     private List<Map<String, Object>> examples = new ArrayList<>();

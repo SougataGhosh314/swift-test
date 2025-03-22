@@ -63,6 +63,7 @@ public class MethodStore {
     }
 
     // Invoke methods dynamically
+    @SuppressWarnings("unchecked")
     public void invoke(String key, Object... args) {
         Object method = methodMap.get(key);
         if (method == null) {
@@ -100,6 +101,7 @@ public class MethodStore {
                 .forEach(path -> {
                     try (InputStream inputStream = Files.newInputStream(path)) {
                         Feature feature = objectMapper.readValue(inputStream, Feature.class);
+                        System.out.println("=============================================================================");
                         System.out.println("====== Running feature: " + feature.getName() + " ======");
                         for (Scenario scenario: feature.getScenarios()) {
                             System.out.println("\t***** Running scenario: " + scenario.getName() + " *****");
@@ -126,7 +128,6 @@ public class MethodStore {
                             }
                             System.out.println();
                         }
-                        System.out.println();
                         System.out.println();
                     } catch (IOException e) {
                         System.err.println("Failed to read file: " + path);
